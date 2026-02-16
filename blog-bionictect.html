@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BionicTect | Tolga Aydın</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .blog-detail-hero {
+            height: 60vh;
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            text-align: center;
+        }
+        .blog-detail-content {
+            padding: 4rem 0;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .blog-detail-content p {
+            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
+            color: #4b5563;
+        }
+        .blog-detail-content h2 {
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
+            font-size: 2rem;
+            color: #1e293b;
+        }
+        .back-btn {
+            display: inline-block;
+            margin-top: 2rem;
+            color: #2563eb;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar scrolled">
+        <div class="container">
+            <a href="index.html" class="logo">Tolga<span>Aydın.</span></a>
+            <ul class="nav-links">
+                <li><a href="index.html#home">Ana Sayfa</a></li>
+                <li><a href="index.html#about">Hakkımda</a></li>
+                <li><a href="index.html#projects">Projeler</a></li>
+                <li><a href="index.html#blog">Etkinlikler</a></li>
+                <li><a href="index.html#contact">İletişim</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <header class="blog-detail-hero">
+        <div class="container">
+            <h1>BionicTect</h1>
+            <p>Biyomekanik ve Yapay Zekanın Kesişim Noktası</p>
+        </div>
+    </header>
+
+    <!-- Content -->
+    <article class="blog-detail-content container">
+        <p>BionicTect, biyolojik sistemlerin mühendislik prensipleriyle yeniden yorumlanması üzerine kurulu bir araştırma ve geliştirme projesidir. Gömülü sistemler ve yapay zeka alanındaki deneyimlerimin bir sentezi olan bu proje, insan hareketlerini yüksek hassasiyetle analiz edip taklit edebilen gelişmiş bir biyomekanik sistem tasarımı sunmaktadır.</p>
+
+        <h2>Teknolojik Altyapı</h2>
+        <p>Proje, ESP32 tabanlı mikrodenetleyiciler ve özel tasarlanmış sensör ağları üzerine inşa edilmiştir. İnsan kas hareketlerini algılayan EMG (Elektromiyografi) sensörleri, verileri gerçek zamanlı olarak işleyerek yapay zeka modeline iletmektedir. TensorFlow ve Keras kullanılarak eğitilen derin öğrenme modelleri, bu sinyalleri anlamlı hareket komutlarına dönüştürür.</p>
+
+        <h2>Yenilikçi Yaklaşım</h2>
+        <p>Geleneksel protez sistemlerinin aksine, BionicTect sadece basit bir açma-kapama mekanizması sunmaz; aynı zamanda kullanıcının niyetini tahmin ederek doğal hareket akışını simüle eder. Bu sayede, biyomekanik uzvun kullanımı daha sezgisel ve zahmetsiz hale gelir.</p>
+
+        <h2>Gelecek Hedefleri</h2>
+        <p>TalkWithHand projesinde edindiğim işaret dili tanıma tecrübesini, BionicTect ile fiziksel bir forma dönüştürmeyi hedefliyorum. Nihai amacımız, sadece hareket kabiliyetini geri kazandırmak değil, aynı zamanda teknoloji ile insan biyolojisi arasındaki sınırları bulanıklaştıran, tam entegre bir "biyonik uzuv" ekosistemi yaratmaktır.</p>
+
+        <a href="index.html#blog" class="back-btn"><i class="fas fa-arrow-left"></i> Geri Dön</a>
+    </article>
+
+    <footer style="background: #f8fafc; padding: 2rem 0; text-align: center; margin-top: 4rem; border-top: 1px solid #e2e8f0;">
+        <p>&copy; 2026 Tolga Aydın. Tüm hakları saklıdır.</p>
+    </footer>
+
+</body>
+</html>
