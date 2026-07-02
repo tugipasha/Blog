@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Tolga Aydın — Full Stack Software Developer specializing in web applications, AI systems, game development, and scalable software architecture." />
+  <title>Tolga Aydın — Full Stack Software Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,400;1,300&family=Righteous&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+
+  <svg class="contour-bg" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+    <path d="M-40,82 C180,71 360,94 540,78 C720,62 900,88 1080,74 C1260,60 1340,86 1480,79" />
+    <path d="M-40,118 C200,105 380,128 560,112 C740,96 920,122 1100,106 C1280,90 1360,116 1480,109" />
+    <path d="M-40,156 C160,142 340,165 520,149 C700,133 880,159 1060,143 C1240,127 1320,153 1480,146" />
+    <path d="M-40,198 C220,184 400,207 580,191 C760,175 940,201 1120,185 C1300,169 1380,195 1480,188" />
+    <path d="M-40,244 C190,230 370,253 550,237 C730,221 910,247 1090,231 C1270,215 1350,241 1480,234" />
+    <path d="M-40,292 C210,278 390,301 570,285 C750,269 930,295 1110,279 C1290,263 1370,289 1480,282" />
+    <path d="M-40,342 C170,328 350,351 530,335 C710,319 890,345 1070,329 C1250,313 1330,339 1480,332" />
+    <path d="M-40,394 C230,380 410,403 590,387 C770,371 950,397 1130,381 C1310,365 1390,391 1480,384" />
+    <path d="M-40,448 C180,434 360,457 540,441 C720,425 900,451 1080,435 C1260,419 1340,445 1480,438" />
+    <path d="M-40,504 C200,490 380,513 560,497 C740,481 920,507 1100,491 C1280,475 1360,501 1480,494" />
+    <path d="M-40,562 C160,548 340,571 520,555 C700,539 880,565 1060,549 C1240,533 1320,559 1480,552" />
+    <path d="M-40,622 C220,608 400,631 580,615 C760,599 940,625 1120,609 C1300,593 1380,619 1480,612" />
+    <path d="M-40,684 C190,670 370,693 550,677 C730,661 910,687 1090,671 C1270,655 1350,681 1480,674" />
+    <path d="M-40,748 C210,734 390,757 570,741 C750,725 930,751 1110,735 C1300,719 1370,745 1480,738" />
+    <path d="M-40,814 C170,800 350,823 530,807 C710,791 890,817 1070,801 C1250,785 1330,811 1480,804" />
+  </svg>
+
+  <nav class="nav" aria-label="Primary">
+    <a href="#" class="nav__brand">Tolga <em>Aydın</em></a>
+
+    <ul class="nav__links" aria-label="Section navigation">
+      <li><a href="#about"><span class="nav__num">01</span> About</a></li>
+      <li><a href="#works"><span class="nav__num">02</span> Works</a></li>
+      <li><a href="#capabilities"><span class="nav__num">03</span> Skills</a></li>
+      <li><a href="#process"><span class="nav__num">04</span> Process</a></li>
+      <li><a href="#contact"><span class="nav__num">05</span> Contact</a></li>
+    </ul>
+
+    <button class="dark-mode-toggle" type="button" aria-label="Toggle dark mode">
+      <!-- Sun icon for light mode -->
+      <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M12 1V3M12 21V23M4.22 4.22L5.64 5.64M18.36 18.36L19.78 19.78M1 12H3M21 12H23M4.22 19.78L5.64 18.36M18.36 5.64L19.78 4.22" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <!-- Moon icon for dark mode -->
+      <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </button>
+
+    <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="site-menu">
+      Index
+      <span class="nav__glyph" aria-hidden="true">
+        <span></span>
+        <span></span>
+      </span>
+    </button>
+  </nav>
+
+  <div class="site-menu" id="site-menu" hidden>
+    <ul class="site-menu__list">
+      <li><a class="site-menu__link" href="#about"><span class="site-menu__num">01</span> About</a></li>
+      <li><a class="site-menu__link" href="#works"><span class="site-menu__num">02</span> Selected Works</a></li>
+      <li><a class="site-menu__link" href="#capabilities"><span class="site-menu__num">03</span> Capabilities</a></li>
+      <li><a class="site-menu__link" href="#process"><span class="site-menu__num">04</span> Process</a></li>
+      <li><a class="site-menu__link" href="#contact"><span class="site-menu__num">05</span> Contact</a></li>
+    </ul>
+  </div>
+
+  <header class="hero dark-section">
+    <canvas aria-label="Interactive portrait reveal — move cursor to trace the surface"></canvas>
+    <div class="hero__overlay">
+      <h1 class="hero__title">
+        TOLGA AYDIN
+        <em>Clean code / Smart systems</em>
+      </h1>
+      <p class="hero__hint">Trace the surface / Reveal underneath</p>
+    </div>
+  </header>
+
+  <section class="intro light-section" data-reveal aria-label="Introduction">
+    <p class="intro__eyebrow">Full Stack Software Developer</p>
+    <p class="intro__lead">
+      Tolga Aydın builds scalable web applications, AI-powered systems,
+      and interactive experiences — with clean architecture and exceptional UX.
+    </p>
+    <a class="intro__link" href="#works">Selected work ↓</a>
+  </section>
+
+  <main class="main">
+
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <div class="marquee__content">
+          <span>TOLGA AYDIN</span><span class="marquee__dot"></span>
+          <span>Full Stack Software Developer</span><span class="marquee__dot"></span>
+          <span>Portfolio 2025 / 2026</span><span class="marquee__dot"></span>
+          <span>Web · AI · Games</span><span class="marquee__dot"></span>
+          <span>Available For Collaboration</span><span class="marquee__dot"></span>
+        </div>
+        <div class="marquee__content">
+          <span>TOLGA AYDIN</span><span class="marquee__dot"></span>
+          <span>Full Stack Software Developer</span><span class="marquee__dot"></span>
+          <span>Portfolio 2025 / 2026</span><span class="marquee__dot"></span>
+          <span>Web · AI · Games</span><span class="marquee__dot"></span>
+          <span>Available For Collaboration</span><span class="marquee__dot"></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="index-strip" data-reveal>
+      <span>TA — 01</span>
+      <span class="index-strip__rule"></span>
+      <span>Portfolio 2025 / 2026</span>
+      <span class="index-strip__rule"></span>
+      <span>Tolga Aydın</span>
+      <span class="index-strip__rule"></span>
+      <span>Open to projects</span>
+    </div>
+
+    <section class="section about light-section" id="about" data-reveal>
+      <header class="section-head">
+        <span class="section-head__label">01 About</span>
+        <span class="section-head__folio">p. 014</span>
+      </header>
+      <div class="about-grid">
+        <h2 class="about-headline">
+          Full Stack Developer
+          <span class="synthetic-line">building intelligent systems</span>
+          and interactive experiences.
+        </h2>
+        <div class="about-body">
+          <p>I'm Tolga Aydın, a Full Stack Software Developer with expertise in modern web technologies, game development, Python, and Machine Learning. I enjoy building scalable applications, intelligent systems, and interactive digital experiences that combine performance, clean architecture, and exceptional user experience.</p>
+          <p>My primary focus is developing fast, secure, and maintainable software solutions using modern technologies while following industry best practices. Whether it's a web application, RESTful API, AI-powered system, or game project, I aim to deliver high-quality solutions with clean code, strong communication, and reliable project execution.</p>
+          <p>I am passionate about learning emerging technologies and continuously improving my skills in software engineering, artificial intelligence, and interactive application development. I believe successful projects are built on clear communication, transparency, attention to detail, and long-term collaboration.</p>
+          <dl class="about-meta">
+            <dt>Role</dt>
+            <dd>Full Stack Software Developer</dd>
+            <dt>Focus</dt>
+            <dd>Web · AI · Games · Python</dd>
+            <dt>Approach</dt>
+            <dd>Clean Architecture · SOLID · Agile</dd>
+            <dt>Status</dt>
+            <dd><span class="status-dot"></span>Online · Open to collaboration</dd>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <section class="section works light-section" id="works" data-reveal>
+      <header class="section-head">
+        <span class="section-head__label">02 Selected Works</span>
+        <span class="section-head__folio">p. 028</span>
+      </header>
+      <h2 class="section-title">Five projects shipped.</h2>
+      <ol class="works-list">
+
+        <li class="work" data-reveal">
+          <div class="work__visual">
+            <img class="work__screenshot" src="/emlakwebsitesi.png" alt="Emlak Website screenshot" loading="lazy" />
+          </div>
+          <div class="work__info">
+            <p class="work__meta">(01 / 05) · Real Estate · 2025</p>
+            <h3 class="work__name">Emlak Website</h3>
+            <p class="work__desc">A modern real estate platform with property listings, responsive layout, and a clean user interface designed for seamless browsing across devices.</p>
+            <div class="work__tags">
+              <span class="work__tag">Web</span>
+              <span class="work__tag">Real Estate</span>
+              <span class="work__tag">Responsive</span>
+            </div>
+            <p class="work__pending">Live URL coming soon</p>
+          </div>
+        </li>
+
+        <li class="work" data-reveal">
+          <div class="work__visual">
+            <img class="work__screenshot" src="/logdwebsitesi.png" alt="Logd website screenshot" loading="lazy" />
+          </div>
+          <div class="work__info">：
+            <p class="work__meta">(02 / 05) · Web Application · 2025</p>
+            <h3 class="work__name">Logd</h3>
+            <p class="work__desc">A full-featured web application built with modern frontend and backend practices — structured for performance, maintainability, and scale.</p>
+            <div class="work__tags">
+              <span class="work__tag">Full Stack</span>
+              <span class="work__tag">Web App</span>
+              <span class="work__tag">UI/UX</span>
+            </div>
+            <p class="work__pending">Live URL coming soon</p>
+          </div>
+        </li>
+
+        <li class="work" data-reveal">
+          <div class="work__visual">
+            <img class="work__screenshot" src="/muntalwebsitesi.png" alt="Muntal website screenshot" loading="lazy" />
+          </div>
+          <div class="work__info">
+            <p class="work__meta">(03 / 05) · Brand & Web · 2025</p>
+            <h3 class="work__name">Muntal</h3>
+            <p class="work__desc">A branded web presence combining editorial design principles with functional architecture — identity, layout, and interaction working as one system.</p>
+            <div class="work__tags">
+              <span class="work__tag">Branding</span>
+              <span class="work__tag">Web</span>
+              <span class="work__tag">Design</span>
+            </div>
+            <p class="work__pending">Live URL coming soon</p>
+          </div>
+        </li>
+
+        <li class="work" data-reveal">
+          <div class="work__visual">
+            <img class="work__screenshot" src="/TheSpecialParfum.png" alt="The Special Parfum website screenshot" loading="lazy" />
+          </div>
+          <div class="work__info">
+            <p class="work__meta">(04 / 05) · E-commerce · 2025</p>
+            <h3 class="work__name">The Special Parfum</h3>
+            <p class="work__desc">An e-commerce experience for a premium fragrance brand — product showcase, refined visual hierarchy, and a shopping flow built for conversion.</p>
+            <div class="work__tags">
+              <span class="work__tag">E-commerce</span>
+              <span class="work__tag">Retail</span>
+              <span class="work__tag">Frontend</span>
+            </div>
+            <p class="work__pending">Live URL coming soon</p>
+          </div>
+        </li>
+
+        <li class="work" data-reveal">
+          <div class="work__visual">
+            <img class="work__screenshot" src="/twhwebsite.png" alt="TWH website screenshot" loading="lazy" />
+          </div>
+          <div class="work__info">
+            <p class="work__meta">(05 / 05) · Web Platform · 2026</p>
+            <h3 class="work__name">TWH</h3>
+            <p class="work__desc">A comprehensive web platform with structured navigation, content management, and a polished interface — engineered for reliability and long-term growth.</p>
+            <div class="work__tags">
+              <span class="work__tag">Platform</span>
+              <span class="work__tag">Web</span>
+              <span class="work__tag">Full Stack</span>
+            </div>
+            <p class="work__pending">Live URL coming soon</p>
+          </div>
+        </li>
+
+      </ol>
+    </section>
+
+    <section class="section capabilities light-section" id="capabilities" data-reveal">
+      <header class="section-head">
+        <span class="section-head__label">03 Capabilities</span>
+        <span class="section-head__folio">p. 042</span>
+      </header>
+      <h2 class="section-title">What I build with.</h2>
+      <div class="capabilities-grid">
+        <article class="capability" data-reveal">
+          <p class="capability__index">↳ 01</p>
+          <h3 class="capability__title">Frontend Development</h3>
+          <p class="capability__body">Modern, responsive interfaces with strong UI/UX — component architecture, state management, and performance-first rendering across devices.</p>
+          <p class="capability__tags">React.js · Next.js · TypeScript · Tailwind CSS · Redux · Zustand · HTML5 & CSS3</p>
+        </article>
+        <article class="capability" data-reveal">
+          <p class="capability__index">↳ 02</p>
+          <h3 class="capability__title">Backend & Database</h3>
+          <p class="capability__body">Scalable server architecture, RESTful APIs, authentication, and real-time applications — paired with optimized database design and ORM integration.</p>
+          <p class="capability__tags">Node.js · Express.js · JWT · OAuth · MongoDB · PostgreSQL · Prisma · Socket.io</p>
+        </article>
+        <article class="capability" data-reveal">
+          <p class="capability__index">↳ 03</p>
+          <h3 class="capability__title">Python & Machine Learning</h3>
+          <p class="capability__body">Python application development, automation, data processing, and AI integration — from model training to deployment inside web applications.</p>
+          <p class="capability__tags">Python · FastAPI · Flask · TensorFlow · PyTorch · Scikit-learn · Pandas · NumPy · NLP · CV</p>
+        </article>
+        <article class="capability" data-reveal">
+          <p class="capability__index">↳ 04</p>
+          <h3 class="capability__title">Game Dev & Engineering</h3>
+          <p class="capability__body">Interactive game development and software engineering fundamentals — clean architecture, testing, CI/CD, and cloud deployment for reliable products.</p>
+          <p class="capability__tags">Unity · C# · OOP · Design Patterns · Docker · Git · CI/CD · AWS · Vercel · Netlify</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section process light-section" id="process" data-reveal">
+      <header class="section-head">
+        <span class="section-head__label">04 Process</span>
+        <span class="section-head__folio">p. 056</span>
+      </header>
+      <h2 class="section-title">How projects run.</h2>
+      <div class="process-steps">
+        <article class="process-step" data-reveal">
+          <p class="process-step__num">01</p>
+          <h3 class="process-step__title">Discover</h3>
+          <p class="process-step__body">Clear communication from the start. Requirements distilled, goals defined, and constraints mapped before a single line of code is written.</p>
+        </article>
+        <article class="process-step" data-reveal">
+          <p class="process-step__num">02</p>
+          <h3 class="process-step__title">Architect</h3>
+          <p class="process-step__body">System design following clean architecture, SOLID principles, and design patterns — scalable structure built for long-term maintainability.</p>
+        </article>
+        <article class="process-step" data-reveal">
+          <p class="process-step__num">03</p>
+          <h3 class="process-step__title">Build</h3>
+          <p class="process-step__body">Agile development with rigorous testing and debugging. Iterative delivery, performance optimization, and transparent progress throughout.</p>
+        </article>
+        <article class="process-step" data-reveal">
+          <p class="process-step__num">04</p>
+          <h3 class="process-step__title">Deliver</h3>
+          <p class="process-step__body">Deployment via Docker, cloud platforms, and CI/CD pipelines. Reliable execution with attention to detail and room for long-term collaboration.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section contact dark-section" id="contact" data-reveal">
+      <header class="section-head">
+        <span class="section-head__label">05 Contact</span>
+        <span class="section-head__folio">p. 082</span>
+      </header>
+      <div class="contact-grid">
+        <div class="contact-copy" data-reveal">
+          <p class="contact-eyebrow">Start a project</p>
+          <h2 class="contact-heading">
+            Let's build
+            <span class="synthetic-line">something measured</span>
+            and memorable.
+          </h2>
+          <p class="contact-body">Share the product idea, delivery timeline, technical scope, or business goal behind your next project. The message lands directly in my inbox through a secured server-side workflow, and I usually reply with next steps, timing, and fit.</p>
+          <div class="contact-points" aria-label="Contact highlights">
+            <article class="contact-point">
+              <span class="contact-point__label">Response</span>
+              <p class="contact-point__value">Typically within 1 to 2 business days</p>
+            </article>
+            <article class="contact-point">
+              <span class="contact-point__label">Focus</span>
+              <p class="contact-point__value">Web platforms, AI systems, APIs, automation, interactive products</p>
+            </article>
+            <article class="contact-point">
+              <span class="contact-point__label">Availability</span>
+              <p class="contact-point__value">Remote, freelance, contract, and long-term collaboration</p>
+            </article>
+          </div>
+          <div class="contact-meta">
+            <a href="mailto:aydintolga008@gmail.com">aydintolga008@gmail.com</a>
+            <span>Tolga Aydın · Remote · Worldwide</span>
+          </div>
+        </div>
+
+        <form class="contact-form" id="contact-form" novalidate data-reveal">
+          <div class="contact-form__row">
+            <div class="contact-field">
+              <label for="contact-name">Name</label>
+              <input
+                id="contact-name"
+                name="name"
+                type="text"
+                autocomplete="name"
+                required
+                minlength="2"
+                maxlength="80"
+                aria-describedby="contact-name-error"
+              />
+              <p class="contact-field__error" id="contact-name-error" aria-live="polite"></p>
+            </div>
+            <div class="contact-field">
+              <label for="contact-email">Email</label>
+              <input
+                id="contact-email"
+                name="email"
+                type="email"
+                autocomplete="email"
+                inputmode="email"
+                required
+                maxlength="120"
+                aria-describedby="contact-email-error"
+              />
+              <p class="contact-field__error" id="contact-email-error" aria-live="polite"></p>
+            </div>
+          </div>
+
+          <div class="contact-field">
+            <label for="contact-subject">Subject</label>
+            <input
+              id="contact-subject"
+              name="subject"
+              type="text"
+              autocomplete="off"
+              required
+              minlength="4"
+              maxlength="120"
+              aria-describedby="contact-subject-error"
+            />
+            <p class="contact-field__error" id="contact-subject-error" aria-live="polite"></p>
+          </div>
+
+          <div class="contact-field">
+            <label for="contact-message">Message</label>
+            <textarea
+              id="contact-message"
+              name="message"
+              rows="7"
+              required
+              minlength="20"
+              maxlength="3000"
+              aria-describedby="contact-message-error contact-note"
+            ></textarea>
+            <p class="contact-field__error" id="contact-message-error" aria-live="polite"></p>
+          </div>
+
+          <div class="contact-form__honeypot" aria-hidden="true">
+            <label for="contact-company">Company</label>
+            <input id="contact-company" name="company" type="text" tabindex="-1" autocomplete="off" />
+          </div>
+
+          <p class="contact-note" id="contact-note">All fields are required. Messages are sent through a protected server endpoint and routed to my designated inbox.</p>
+
+          <div class="contact-form__actions">
+            <button class="contact-submit" type="submit">
+              Send message
+              <span class="contact-submit__glyph">→</span>
+            </button>
+            <p class="contact-status" id="contact-status" role="status" aria-live="polite"></p>
+          </div>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer dark-section">
+    <div class="footer-top">
+      <span class="footer-brand">TOLGA AYDIN</span>
+      <span class="footer-tagline">Clean code / Smart systems</span>
+    </div>
+    <div class="footer-grid">
+      <div class="footer-col">
+        <p class="footer-col__label">Index</p>
+        <a href="#about">About</a>
+        <a href="#works">Selected Works</a>
+        <a href="#capabilities">Capabilities</a>
+      </div>
+      <div class="footer-col">
+        <p class="footer-col__label">Expertise</p>
+        <a href="#capabilities">Frontend</a>
+        <a href="#capabilities">Backend</a>
+        <a href="#capabilities">Machine Learning</a>
+      </div>
+      <div class="footer-col">
+        <p class="footer-col__label">Contact</p>
+        <a href="mailto:aydintolga008@gmail.com">aydintolga008@gmail.com</a>
+        <a href="#contact">Collaborate</a>
+      </div>
+    </div>
+    <p class="footer-lockup" aria-hidden="true">TOLGA AYDIN</p>
+  </footer>
+
+  <script type="module" src="/script.js"></script>
+
+  <script>
+    (function () {
+      var nav = document.querySelector('.nav');
+      var toggle = document.querySelector('.nav__toggle');
+      var darkModeToggle = document.querySelector('.dark-mode-toggle');
+      var menu = document.getElementById('site-menu');
+      var closeTimer = null;
+
+      // Dark mode handling
+      function applyDarkMode(isDark) {
+        document.body.classList.toggle('dark-mode', isDark);
+        // Don't overwrite innerHTML - CSS handles icon visibility
+      }
+
+      function initDarkMode() {
+        var stored = localStorage.getItem('darkMode');
+        if (stored !== null) {
+          applyDarkMode(stored === 'true');
+        } else {
+          var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+          applyDarkMode(prefersDark);
+        }
+      }
+
+      darkModeToggle.addEventListener('click', function () {
+        var isDark = !document.body.classList.contains('dark-mode');
+        localStorage.setItem('darkMode', String(isDark));
+        applyDarkMode(isDark);
+      });
+
+      // Listen for system preference changes
+      window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', function (e) {
+        if (localStorage.getItem('darkMode') === null) {
+          applyDarkMode(e.matches);
+        }
+      });
+
+      initDarkMode();
+
+      // Smart nav text color based on section
+      var sections = document.querySelectorAll('.dark-section, .light-section');
+      var currentSectionClass = '';
+
+      function updateNavTextColor() {
+        var scrollPos = window.scrollY + 100; // Offset to account for nav height
+        for (var i = sections.length - 1; i >= 0; i--) {
+          var section = sections[i];
+          var sectionTop = section.offsetTop;
+          if (scrollPos >= sectionTop) {
+            var sectionClass = section.classList.contains('dark-section') ? 'nav-light-text' : 'nav-dark-text';
+            if (sectionClass !== currentSectionClass) {
+              nav.classList.remove('nav-light-text', 'nav-dark-text');
+              nav.classList.add(sectionClass);
+              currentSectionClass = sectionClass;
+            }
+            break;
+          }
+        }
+      }
+
+      function updateNav() {
+        nav.classList.toggle('is-scrolled', window.scrollY > 80);
+        updateNavTextColor();
+      }
+
+      window.addEventListener('scroll', updateNav, { passive: true });
+      updateNav();
+
+      function openMenu() {
+        clearTimeout(closeTimer);
+        menu.hidden = false;
+        requestAnimationFrame(function () {
+          menu.classList.add('is-open');
+        });
+        toggle.setAttribute('aria-expanded', 'true');
+        document.documentElement.classList.add('menu-open');
+      }
+
+      function closeMenu() {
+        menu.classList.remove('is-open');
+        toggle.setAttribute('aria-expanded', 'false');
+        document.documentElement.classList.remove('menu-open');
+        closeTimer = setTimeout(function () {
+          menu.hidden = true;
+        }, 480);
+      }
+
+      toggle.addEventListener('click', function () {
+        if (toggle.getAttribute('aria-expanded') === 'true') {
+          closeMenu();
+        } else {
+          openMenu();
+        }
+      });
+
+      menu.querySelectorAll('a').forEach(function (link) {
+        link.addEventListener('click', closeMenu);
+      });
+
+      document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape' && toggle.getAttribute('aria-expanded') === 'true') {
+          closeMenu();
+        }
+      });
+
+      if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        document.querySelectorAll('[data-reveal]').forEach(function (el) {
+          el.classList.add('is-visible');
+        });
+        return;
+      }
+
+      var observer = new IntersectionObserver(
+        function (entries) {
+          entries.forEach(function (entry) {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('is-visible');
+              observer.unobserve(entry.target);
+            }
+          });
+        },
+        { threshold: 0.12, rootMargin: '0px 0px -8% 0px' }
+      );
+
+      document.querySelectorAll('[data-reveal]').forEach(function (el) {
+        observer.observe(el);
+      });
+    })();
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,18 @@
+{
+  "name": "tolga-portfolio",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "node server.js --dev",
+    "build": "vite build",
+    "preview": "vite preview",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^5.1.0",
+    "nodemailer": "^7.0.5",
+    "three": "^0.175.0",
+    "vite": "^7.0.0"
+  }
+}
