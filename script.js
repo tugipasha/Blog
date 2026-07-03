@@ -134,7 +134,7 @@ function loadPortrait(src, label) {
   });
 }
 
-loadPortrait('/portrait_top.png', 'portrait_top')
+loadPortrait('./portrait_top.png', 'portrait_top')
   .then(({ tex, size }) => {
     topTexture.dispose();
     displayMaterial.uniforms.uTopTexture.value = tex;
@@ -142,7 +142,7 @@ loadPortrait('/portrait_top.png', 'portrait_top')
   })
   .catch(() => {});
 
-loadPortrait('/portrait_bottom.png', 'portrait_bottom')
+loadPortrait('./portrait_bottom.png', 'portrait_bottom')
   .then(({ tex, size }) => {
     bottomTexture.dispose();
     displayMaterial.uniforms.uBottomTexture.value = tex;
